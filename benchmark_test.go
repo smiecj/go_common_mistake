@@ -9,6 +9,11 @@ func clear(n uint64, i, j uint8) uint64 {
 	return (math.MaxUint64<<j | ((1 << i) - 1)) & n
 }
 
+//go:noinline
+func clear_noinline(n uint64, i, j uint8) uint64 {
+	return (math.MaxUint64<<j | ((1 << i) - 1)) & n
+}
+
 func BenchmarkCleanBit(b *testing.B) {
 	for i := 0; i < b.N; i++ {
 		clear(1221892080809121, 10, 63)
