@@ -2,4 +2,9 @@ module github.com/smiecj/go_common_mistake
 
 go 1.16
 
-require github.com/stretchr/testify v1.7.0
+require (
+	github.com/agiledragon/gomonkey v2.0.2+incompatible
+	github.com/agiledragon/gomonkey/v2 v2.1.0
+	github.com/smartystreets/goconvey v1.6.4
+	github.com/stretchr/testify v1.7.0
+)

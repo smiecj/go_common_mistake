@@ -9,3 +9,6 @@ test_benchmark_flag:
 
 test_benchmark_forbid_inline:
 	go test -gcflags="-N -l -m" -bench=. benchmark_test.go
+
+test_inline:
+	go test -v inline_test.go
