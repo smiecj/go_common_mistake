@@ -12,3 +12,6 @@ test_benchmark_forbid_inline:
 
 test_inline:
 	go test -v inline_test.go
+
+test_slice:
+	go test -v slice_test.go
